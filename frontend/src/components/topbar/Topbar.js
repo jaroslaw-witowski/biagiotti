@@ -1,9 +1,8 @@
 import PropTypes from "prop-types"
 import React from "react"
-import './topbar.css'
 import icon from '../../images/user-icon.png'
 
-const Topbar = ({ siteTitle }) => (
+const Topbar = () => (
   <div id="topbar">
   <div className="topbar">
     <div className="topbar-mailto">

@@ -1,0 +1,131 @@
+#header {
+  padding: 0% 3%;
+}
+
+#header,
+.header-position-left,
+.header-position-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.header-position-left {
+    padding-right: 2.5%;
+}
+
+.header-position-right {
+    padding-left: 2.5%;
+}
+
+.header-position-left,
+.header-position-right {
+  width: 100%;
+}
+
+.header-position-left-widget__wishlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-family: 'Cormorant', serif;
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+}
+
+.header-position-left-widget__wishlist:hover{
+    filter: invert(1);
+    color: rgb(150, 150, 150);
+    transition: .4s;
+}
+
+.header-position-left-widget__wishlist-icon {
+    padding-bottom: 2px;
+}
+
+.header-position-left-widget__wishlist-icon {
+    padding-right: 10px;
+    height: inherit;
+}
+
+.header-position-left-navigation {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-menu-navigation-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.24rem;
+}
+
+.navigation-menu-list-element {
+  padding: 0 22px;
+  font-family: "Lato", sans-serif;
+}
+
+.navigation-menu-list-element-link {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.navigation-menu-list-element-link:after {  
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .3s ease, background-color .3s ease; /* .5 seonds for changes to the width and background-color */
+    -webkit-transition: width .3s ease, background-color .3s ease; /* Chrome and Safari */
+    -moz-transition: width .3s ease, background-color .3s ease; /* FireFox */
+}
+
+.navigation-menu-list-element-link:hover:after{
+    width: 100%;
+    background: black;
+  }
+
+.logo {
+  height: 75px;
+}
+
+.header-position-right-widget{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-position-right-widget__shoppingCart{
+    position: relative;
+    padding-right: 1rem;
+}
+
+.header-position-right-shoppingBag__indicator{
+    font-size: 1.2rem;
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+}
+
+.svg:hover {
+    fill: black;
+}
+
+.header-position-right-searchbar-button {
+    background: none;
+    border: none;
+    cursor:pointer;
+    outline: none;
+}
